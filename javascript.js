@@ -10,8 +10,8 @@ function createGrid(dimension) {
         const square = document.createElement("div"); 
         square.setAttribute("style", `height: ${500/dimension}px; 
                             width: ${500/dimension}px; 
-                            border: solid black;`)
-                            
+                            border: 0.1px solid black;`)
+
         square.classList.add("cell"); 
         container.appendChild(square); 
     }

@@ -3,6 +3,7 @@ body {
     flex-direction: column;
     align-items: center;
     height: 100vh;
+    zoom: 95%;
 }
 
 .container { 
@@ -11,12 +12,18 @@ body {
     width: 900px;
     height: 900px;
     background-color: beige;
+    margin: 30px;
 }
 
 .cell { 
     box-sizing: border-box;
 }
 
-h3 { 
-    text-align: center;
+button { 
+    background-color: rgb(0, 132, 255);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
 }
+

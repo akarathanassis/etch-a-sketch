@@ -11,6 +11,10 @@ function createGrid(dimension) {
         square.setAttribute("style", `height: ${900/dimension}px; 
                             width: ${900/dimension}px; 
                             border: 0.1px solid black;`)
+        // add a hover event listener to change colour 
+        square.addEventListener("mouseover", () => { 
+            square.style.backgroundColor = "black"; 
+        })
 
         square.classList.add("cell"); 
         container.appendChild(square); 

@@ -3,6 +3,20 @@ let containerWidth = 500;
 let dimension = Number(prompt("Enter number of squares per row!")); 
 const container = document.querySelector(".container");
 
+const button = document.querySelector("button"); 
+button.addEventListener("click", () => { 
+    clearGrid(); 
+    createGrid(parseInt(prompt("Enter number of squares per row!"))); 
+})
+
+
+function clearGrid() { 
+    const squares = document.querySelectorAll(".cell")
+    squares.forEach((square) => { 
+        container.removeChild(square); 
+    })
+}
+
 function createGrid(dimension) { 
     // now create a grid of dimension x dimension square divs 
     for (let i=0; i<dimension*dimension; i++) { 
@@ -20,5 +34,6 @@ function createGrid(dimension) {
         container.appendChild(square); 
     }
 }
+
 
 createGrid(dimension); 

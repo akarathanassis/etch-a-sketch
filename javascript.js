@@ -8,8 +8,8 @@ function createGrid(dimension) {
     for (let i=0; i<dimension*dimension; i++) { 
         // create the desired square div and set correct height and width and border
         const square = document.createElement("div"); 
-        square.setAttribute("style", `height: ${500/dimension}px; 
-                            width: ${500/dimension}px; 
+        square.setAttribute("style", `height: ${900/dimension}px; 
+                            width: ${900/dimension}px; 
                             border: 0.1px solid black;`)
 
         square.classList.add("cell"); 
